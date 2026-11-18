@@ -24,9 +24,9 @@ PanelWindow {
 			verticalCenter: parent.verticalCenter
 		}	
 		Clock{}
-		LazyLoader {
+		Loader {
 			active: UPower.displayDevice.ready && UPower.displayDevice.isLaptopBattery
-			Battery{}
+			sourceComponent: Battery{}
 
 		}
 		
